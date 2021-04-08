@@ -244,7 +244,7 @@ class RobustPhaseEstimation:
         correct choice of branch at each generation, i.e., if the intersection
         of Φ_k is nonempty.
         """
-        return self.check_angle(self._c_Delta(lambda *args: numpy.pi), **kwargs)
+        return self.check_angle(self._c_local(lambda *args: numpy.pi), **kwargs)
 
     # Consistency checks
 
